@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+
 }
 
 .empty {
@@ -38,7 +39,7 @@ body {
     align-items: center;
     gap: 1rem;
     background-color: #2a2a2a;
-    
+
 }
 
 .infobox-left img {
@@ -133,6 +134,7 @@ body {
     flex-wrap: wrap;
     /* Added for better mobile responsiveness */
     font-size: 1.1vw;
+    color: black;
 }
 
 .right {
@@ -161,9 +163,6 @@ body {
 }
 
 
-
-
-
 .story-titel {
     width: 85%;
     max-width: 900px;
@@ -173,7 +172,7 @@ body {
 }
 
 .story-titel h2 {
-width: 100%;
+    width: 100%;
     margin: 0;
     color: #d8d8d8;
     font-size: clamp(2rem, 8vw, 8.5rem);
@@ -181,32 +180,35 @@ width: 100%;
     letter-spacing: 1px;
     text-transform: none;
     text-shadow: none;
-
-
 }
-
-
-
 
 .block-container {
 
     width: 80%;
     margin: 0 10%;
-    background-color: orange;
+    background-color: darkgray;
     display: flex;
+    border: solid 2px black;
+    border-radius: 25px;
 
 }
 
 .story {
+    margin: 25px 0 25px 0;
     width: 50%;
 }
 
 .story-container {
+    margin-top: 0.2rem;
     width: 50%;
-    border: 2px solid;
-    display: flex;
+    border-radius: 25px;
+    display: block;
     justify-content: center;
 
+}
+
+.story-container>img {
+    margin: auto;
 }
 
 .s-left {
@@ -218,8 +220,75 @@ width: 100%;
 }
 
 .small-story-titel {
+    color: black;
     text-align: center;
     font-weight: 1000;
+    font-size: 2.5rem;
+}
+
+.image.is-256x256 {
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+
+.image.is-256x256 img {
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+
+    transform-origin: center;
+
+}
+
+
+.story-container:hover .image.is-256x256 img {
+    transform: scale(1.1);
+  
+    opacity: 0.5;
+
+}
+
+
+.story-container:hover .image.is-256x256 {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.bilden {
+    border-radius: 25px !important;
+    border: dotted blue 5px !important;
+}
+
+@media (max-width: 1410px) {
+
+    .block-container{
+
+        flex-direction: column;
+        display: flex;
+        width: 80%;
+      
+    }
+
+
+    .story{
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 1200px) {
+
+    .text-container {
+        font-size: large;
+        color: black;
+
+    }
+
+
 }
 
 
@@ -288,4 +357,4 @@ width: 100%;
 
 #storiestitel {
     transition: letter-spacing 0.2s ease;
-  }
+}

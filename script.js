@@ -28,8 +28,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const opacity = 1 - (normalizedDistance * 0.8); // Min opacity will be 0.2
             
             // Apply the opacity
+            if(screen.width < 800){
+               element.style.opacity = 1;
+            }
+
+            else{
             element.style.opacity = opacity;
+            }
         });
+
     }
     
     // Update opacity on page load

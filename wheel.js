@@ -92,12 +92,13 @@ function show(centerIndex) {
         img.style.margin = "0 5px";
         img.style.transform = `rotate(${rotationDegree}deg)`;
         img.style.transformOrigin = "bottom center";
-        img.style.transition = "all 0.2s ease"; 
+        img.style.transition = "all 0.2s ease";
 
         if (specialnummber == 2) {
 
             img.style.cursor = "pointer";
 
+            img.id = "btn-remover";
             img.addEventListener('mouseover', () => {
                 img.classList.add('heartbeat-hover');
             });
@@ -120,10 +121,10 @@ function show(centerIndex) {
                 img.style.transition = "top 3s ease, opacity 1.5s ease";
                 img.style.top = "-150vh";
                 img.style.opacity = "0";
-
+ 
                 console.log("Image flying away!");
 
-                 infobox = document.getElementById("infoboxid");
+                infobox = document.getElementById("infoboxid");
 
                 infobox.style.position = "fixed";
                 infobox.style.top = "-150vh";
@@ -168,11 +169,19 @@ function show(centerIndex) {
 function createNavigation() {
     const nav = document.createElement('div');
     nav.style.position = "fixed";
-    nav.style.bottom = "20px";
+
+    if (screen.width < 800) {
+        nav.style.top = "175px";
+        nav.style.zindex = "1";
+    }
+    else {
+        nav.style.bottom = "20px";
+    }
     nav.style.left = "50%";
     nav.style.transform = "translateX(-50%)";
     nav.style.display = "flex";
     nav.style.gap = "20px";
+    nav.style.zIndex = "9999"; // Make sure it's on top if needed
 
     const prevBtn = document.createElement('button');
     prevBtn.textContent = "Previous";
@@ -184,8 +193,33 @@ function createNavigation() {
     nextBtn.className = "btn btn-secondary";
     nextBtn.onclick = add;
 
+    // Apply consistent sizing styles
+    [prevBtn, nextBtn].forEach(btn => {
+        btn.style.fontSize = "2vh";          // Responsive font size
+        btn.style.padding = "10px 20px";     // Comfortable padding
+        btn.style.minWidth = "120px";        // Prevent too narrow buttons
+        btn.style.borderRadius = "10px";     // Optional: Rounded corners
+        btn.style.cursor = "pointer";        // Visual feedback
+    });
+
+
+
     nav.appendChild(prevBtn);
     nav.appendChild(nextBtn);
+
+
+    window.addEventListener('scroll', () => {
+        let btnremover = document.getElementById("btn-remover");
+
+        if (window.scrollY > btnremover.offsetTop) {
+            nav.style.display = "none";
+        }
+        else {
+            nav.style.display = "flex";
+        }
+    });
+
+
 
     document.body.appendChild(nav);
 }
@@ -206,11 +240,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
+
 //! för att man ska lämmna infobox
 function leave() {
-  
+
     infobox.classList.remove("infobox");
     infobox.classList.add("empty");
 
 }
+
 
