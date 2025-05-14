@@ -1,0 +1,313 @@
+body {background-color: black !important;}
+
+
+/*todo JS KLASS */
+
+.hidden{
+    display: none;
+}
+
+.showTheHidden{
+
+display: block;
+width: 100%;
+max-width: 600px; 
+margin: 1rem auto;
+padding: 1rem 1.5rem;
+border: 3px solid #f8f9fa;
+background-color: #212529;
+color: #ffc107; 
+border-radius: 8px; 
+font-size: 1rem; 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+text-align: center;
+}
+
+
+.about-container {
+    background-color: black;
+    display: flex;
+}
+
+
+
+/*! Del 1 Vänstra sidan */
+.about-container-part-1{
+    width: 60%;
+}
+
+
+
+.under-rubrik {
+    margin-left: 8%;
+    color: white;
+    background-color: black;
+    font-size: 55px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.social-media-container {
+ 
+    width: 80%;
+    margin-left: 16%;
+}
+
+.social-media-rubrik {
+    margin-left: 8%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    color: white;
+}
+.social-media-atag-container{
+    transition: 0.5s;
+
+}
+
+/*! Det ska inte vara en lite blå linie*/
+.social-media-atag-container a{
+    text-decoration: none;
+}
+
+
+.social-media {
+    margin-left: 8%;
+}
+
+.social-media-image {
+    border-radius: 50%;
+    border: 3px solid darkblue;
+    max-width: 80px;
+}
+
+.social-media:hover .social-media-image{
+    opacity: 0.3;
+}
+
+
+.social-media-container h2 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left:8%;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.social-media-container p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left:8%;
+    width: 80%  ;
+   font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+
+
+/*! Del 2  Högra sidan*/
+
+.about-container-part-2{
+    width: 40%;
+}
+
+.about-container-part-2 div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: auto;
+    width: 60%;
+    border-radius: 50%;
+    border:dotted 4px blue;
+}
+
+/*! Nu komentarer*/
+
+.commentarer-rubrik{
+    text-align: center;
+border-top: 3px solid grey;
+border-bottom: 3px solid grey;
+background-color: black;
+color: yellow;
+
+}
+
+.commentarer-rubrik h3 {
+    font-size: 225%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.commentarer{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;  
+gap: 2%;  
+margin-left: 5%;
+    width: 90%;
+    height: auto;
+    background-color: black;
+}
+
+
+.test-comentar {
+    margin: 20px auto;
+    max-width: 400px; 
+    background-color: #444; 
+    border: 2px solid #FFD700;
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px black; 
+    overflow: hidden; 
+}
+
+.test-comentar h4 {
+    color: white; 
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
+
+.test-comentar h4:first-child{
+    text-decoration: underline 5px;
+    text-decoration-color: black;
+}
+.test-comentar p {
+    color: white;
+    line-height: 1.6; 
+    margin-bottom: 0;
+}
+
+
+/* !  Form */
+
+.form-container{
+ background-color: black;
+ padding: 20px;
+        width: 50%;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px black;
+       
+}
+
+.form-container form{
+margin-left: 10%;
+color: orange;
+font-family: Arial, sans-serif;
+font-size: 16px;
+}
+
+.form-container form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-container form input {
+    width: 90%;
+    padding: 10px; 
+    border: 2px solid yellow;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.form-container form button {
+    margin-top: 20px;
+    padding: 10px 20px; 
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+@media (max-width:1400px) {
+    .social-media-image {
+        max-width: 75px;
+    }
+    .social-media-rubrik {
+        
+        font-size: 40px;
+ 
+    }
+}
+
+@media (max-width:1300px) {
+
+    .about-container{
+        display: block;
+    }
+
+    .about-container-part-1{
+        width: 100%;
+    }
+    .about-container-part-2{
+        border-top: 5px Grey solid;
+        width: 100%;
+    }
+
+    .social-media-container h2 {
+      
+        font-size: 25px;
+    }
+
+    .social-media-rubrik {
+        font-size:30px;
+    }
+}
+
+
+@media (max-width:880px) {
+
+    .under-rubrik{
+        font-size: 45px;
+    }
+    .social-media-image {
+        width: 250px;
+    }
+
+    .social-media-container h2 {
+        font-size: 20px;
+    }
+
+    .social-media-rubrik {
+        font-size:35px;
+    }
+    .social-media-image {
+        max-width: 50px;
+    }
+}
+
+@media (max-width:600px)
+{
+    .commentarer{
+        display: block;
+    }
+}
+
+@media (max-width:550px) {
+    .social-media-rubrik {
+        font-size:25px;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .under-rubrik {
+    font-size:35px;
+    }
+    .social-media-rubrik {
+        font-size:20px;
+    }
+}

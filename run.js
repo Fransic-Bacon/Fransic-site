@@ -17,7 +17,7 @@ let Bagare = new charachter("Bagare Bengtsson", "ska kolla", "Han har ett bageri
 let Sven2 = new charachter("En anna Sven", "?", "Han är en annan variant av Sven");
 let Helicop = new charachter("Helicopter", 0.5, "Det är en helicotper med 3ÅrigSlav Sven och snobben i");
 let TreÅrigSlavJul = new charachter("3ÅrigSlav Jul", 1, "Det är jul så han firar jul");
-let Klas = new charachter("Klas (knas-klas)", 0.2, "Han är en krabba som nyper saker med sina klor");
+let Klas = new charachter("Klas (knas-klas)", "58 * krabbålder = 6 ", "Han är en krabba som nyper saker med sina klor");
 
 let charobj = [
     Fransic,

@@ -262,6 +262,24 @@ body {
     border: dotted blue 5px !important;
 }
 
+
+.big-story-titel-container {
+    width: 100%;
+    margin: 25px auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-story-titel > h2
+{
+    font-size: 2.5rem;
+    color: black;
+    text-align: center;
+    font-weight: 1000;
+    margin: 0;
+}
 @media (max-width: 1410px) {
 
     .block-container{
@@ -323,6 +341,13 @@ body {
 
     .infobox-right>div {
         margin: 0 auto;
+    }
+
+}
+@media (max-height: 800px) {
+    .infobox {
+       max-width: 90%;
+       display: block;
     }
 
 }

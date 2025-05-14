@@ -1,0 +1,419 @@
+/* https://stackoverflow.com/questions/44080173/how-can-i-get-rid-of-the-gap-at-the-edge-of-the-page */
+
+body {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: lightgrey;
+    height: 100vh;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-areas: 'headx headx  headx'
+        'svarta namn  svartb'
+        'svarta innehåll  svartb'
+        'svarta  fotter svartb';
+    width: 100%;
+    height: 100%;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+/*  head = navbar
+svart = den svrta ytan
+namn = bilden + fransic bacon shop
+*/
+
+a {
+
+    text-decoration: none;
+
+}
+
+/*nav bar*/
+.header {
+    display: flex;
+    align-items: center;
+    grid-area: headx;
+    border: 5px solid black;
+    background-color: lightgrey;
+
+
+}
+
+/* gällande alla länkar inom hela navbaren*/
+.header a {
+    color: black;
+    align-items: center;
+    display: flex;
+}
+
+/* bilden i hörnet  Om man trycker på den kommer man till start sidan är inte med i navbar för den är i en annan div och har helt annan css*/
+.divimg {
+    display: inline-block;
+    padding-right: 5px;
+
+}
+
+.litenlogga {
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 50px;
+    height: 100%;
+    border: black solid 2px;
+    transition: 1s;
+}
+
+.litenlogga:hover {
+
+    width: 25px;
+    height: 25px;
+    transition: 2s;
+}
+
+/*navbaralltså allting i headern utom bilden.*/
+
+.navbar {
+    width: 100%;
+
+    justify-content: space-between;
+
+    display: flex;
+}
+
+
+
+
+/*  tillexempel  classen produkter är navbar > a > div,    medans produktera är navbar > a,   alltså a taggen som är runt diven med texten*/
+
+.baconIa {
+    border-left: black 5px solid;
+    border-right: black 5px solid;
+    padding: 12px;
+
+}
+
+
+.baconI {
+    font-size: 35px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+.produktera {
+
+    width: 25%;
+}
+
+
+.produkter {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.produkter:hover {
+    font-size: 50px;
+    transition: 1s;
+}
+
+
+
+.omossa {
+
+    border-left: black 5px solid;
+    width: 25%;
+    font-size: 25px;
+
+}
+
+
+
+.omoss {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.omoss:hover {
+    font-size: 50px;
+    transition: 1s;
+
+}
+
+.loggaina {
+
+    border-left: black 5px solid;
+}
+
+
+.loggain {
+
+    font-size: 25px;
+    transition: 1s;
+}
+
+.loggaina :hover {
+
+
+    padding-right: 15px;
+    padding-left: 15px;
+    transition: 1.5s;
+}
+
+.loggain :hover {
+
+
+    font-size: 50px;
+    transition: 1.5s;
+}
+
+
+/*slut på navbar*/
+
+/* svart box*/
+.svartbox {
+    display: inline-block;
+
+    background-color: black;
+    height: 100%;
+}
+
+.svarta {
+    grid-area: svarta;
+}
+
+.svartb {
+    grid-area: svartb;
+}
+
+/*slut på svart box*/
+
+/*Bild och namn */
+
+.rubrik {
+    grid-area: namn;
+    border-bottom: 5px black solid;
+
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+}
+
+
+
+.rubrik a img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: solid black 5px;
+
+    margin: 1%;
+    transition: 1.5s;
+}
+
+.rubrik a img:hover {
+
+    width: 110px;
+    height: 110px;
+    transition: 1.5s;
+}
+
+
+.rubriktext {
+
+    font-size: 70px;
+}
+
+
+
+.rubrik div {
+    margin-left: 10%;
+    width: 100%;
+    display: inline-block;
+
+
+}
+
+/*slut på bild och namn*/
+
+/*huvud inehållet innuti inehåll kommer huvudsaken på varje sida vara anorlunda*/
+
+.innehåll {
+
+
+    background-color: lightgrey;
+    height: 100%;
+    grid-area: innehåll;
+
+
+
+}
+
+/* sakerna innuti inehållet*/
+
+/*  namnet på kategorin */
+.kategori {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+/* diven som har produkterna i sig som man kan scrolla med */
+
+.scrolldiv {
+
+    border-top: 5px black solid;
+    white-space: nowrap;
+    background-color: lightgrey;
+    overflow: auto;
+    width: 100%;
+    border-bottom: 5px black solid;
+}
+
+
+/* *ifall du hinner gör så man kan scrolla de olika kateforierna åt vänster horizontelt. försökte med det men det gick inte för att eftersom allting
+ var flex så blev det bara brett och man behövde en begränsad width på scrolldiv för att man skulle kunna börja scrolla men det hände alldrig eftersom allting är flex. Så måste försöka lösa det.  Det funkar dock utan hade dock bara 
+ varit mycket bättre ifall det funakde.*/
+
+/* css till produkterna innuti scrolldiven*/
+
+
+.vara {
+
+    width: 150px;
+    border: 5px black solid;
+    display: inline-block;
+    margin: 10px;
+    transition: 1.5s;
+    margin: 20px;
+}
+
+.vara:hover {
+    width: 175px;
+    transition: 1.5s;
+
+}
+
+
+.köpbild {
+
+    width: 100%;
+    height: 150px;
+
+}
+
+
+.köptext {
+    text-align: center;
+    font-size: 25px;
+    border-top: 5px black solid;
+    margin: 0px;
+}
+
+
+
+
+
+
+/* början på fotter */
+
+.fotter {
+    border-top: 5px solid black;
+    grid-area: fotter;
+    background-color: lightgrey;
+
+}
+
+.fotter div {
+
+    font-size: 20px;
+}
+
+.fotterlänk {
+    font-size: 25px;
+    color: orange;
+}
+
+.fotterlänk :hover {
+
+    font-size: 40px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 570px) {
+
+
+    /*navbar */
+
+    .baconIa {
+        border-left: black 5px solid;
+        border-right: black 5px solid;
+        padding: 0px;
+
+    }
+
+    .baconI {
+        font-size: 20px;
+    }
+
+
+
+    .produkter {
+        font-size: 15px;
+    }
+
+    .rubriktext {
+        font-size: 30px;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .innehåll {
+
+
+        background-color: lightgrey;
+        height: 800px;
+        grid-area: innehåll;
+
+        overflow: scroll;
+        overflow-x: hidden;
+
+
+    }
+
+    .köptext {
+        font-size: 20px;
+
+
+    }
+
+}
