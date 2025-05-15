@@ -1,3 +1,4 @@
+
 let folderPath2 = "images/";
 
 let array2 = [
