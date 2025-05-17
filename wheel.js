@@ -1,3 +1,4 @@
+
 let folderPath2 = "images/";
 
 let array2 = [
@@ -69,6 +70,7 @@ function show(centerIndex) {
     text.style.borderRadius = "10px";
     text.style.fontSize = "7.5vh";
     text.style.zIndex = "2";
+    text.style.fontFamily = "Stencil Std, fantasy";
 
     box.appendChild(text);
 
@@ -202,7 +204,7 @@ function createNavigation() {
         btn.style.cursor = "pointer";        // Visual feedback
     });
 
-
+        nav.style.zIndex = "1000000";
 
     nav.appendChild(prevBtn);
     nav.appendChild(nextBtn);

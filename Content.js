@@ -1,4 +1,5 @@
-
+if(screen.width > 800)
+{
 let folderPath = "imagess/";
 
 let array = [
@@ -714,4 +715,9 @@ function checkCollisions() {
             }
         }
     }
+}
+}
+
+else{
+
 }
