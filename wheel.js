@@ -69,7 +69,7 @@ function show(centerIndex) {
     text.style.padding = "5px 10px";
     text.style.borderRadius = "10px";
     text.style.fontSize = "7.5vh";
-    text.style.zIndex = "2";
+    text.style.zIndex = "100000000";
     text.style.fontFamily = "Stencil Std, fantasy";
 
     box.appendChild(text);
@@ -204,12 +204,12 @@ function createNavigation() {
         btn.style.cursor = "pointer";        // Visual feedback
     });
 
-        nav.style.zIndex = "1000000";
+        nav.style.zIndex = "1000";
 
     nav.appendChild(prevBtn);
     nav.appendChild(nextBtn);
 
-
+if(screen.width > 800){
     window.addEventListener('scroll', () => {
         let btnremover = document.getElementById("btn-remover");
 
@@ -221,6 +221,22 @@ function createNavigation() {
         }
     });
 
+}
+
+else{
+
+ window.addEventListener('scroll', () => {
+        let btnremover = document.getElementById("btn-remover2");
+
+        if (window.scrollY > btnremover.offsetTop) {
+            nav.style.display = "none";
+        }
+        else {
+            nav.style.display = "flex";
+        }
+    });
+
+}
 
 
     document.body.appendChild(nav);
