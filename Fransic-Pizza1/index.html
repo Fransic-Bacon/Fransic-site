@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+    <title>Fransic Pizza place</title>
+  </head>
+  <body>
+
+
+ <div class="sticky-header" id="stickyHeader">
+      <div class="sticky-header-logo">070-123-456-78</div>
+      <div class="sticky-nav">
+        <a href="#pizzamenu">Pizza</a>
+        <a href="#pastamenu">Pasta</a>
+        <a href="#anantmenu">Annat</a>
+        <a href="#kontaktmenu">Kontakt</a>
+      </div>
+    </div>
+
+
+    <div class="mycontainer">
+      <img src="bilder/rpizza.png" class="img-fluid theimage" width="100%"  alt="..." />
+      <div class="top-left">070-123 456 78</div>
+      <div class="top-right">Bacon gatan 15</div>
+     
+      <div class="centered">  <div class="button_slide slide_left"  onclick="document.getElementById('navplacer').scrollIntoView({
+                    behavior: 'smooth'
+                  });">Menu </div></div>
+    </div>
+
+    <div class="thetitel"  id="navplacer">
+            <h1>Fransic Bacons Pizza place</h1>
+        </div>
+
+    <div class="menu-categories">
+      <button class="category-btn" onclick="document.getElementById('pizzamenu').scrollIntoView({behavior: 'smooth'});">Pizza</button>
+      <button class="category-btn" onclick="document.getElementById('pastamenu').scrollIntoView({behavior: 'smooth'});">Pasta</button>
+      <button class="category-btn" onclick="document.getElementById('anantmenu').scrollIntoView({behavior: 'smooth'});">Annat</button>
+      <button class="category-btn" onclick="document.getElementById('kontaktmenu').scrollIntoView({behavior: 'smooth'});">Kontakta oss</button>
+    </div>
+
+
+    <div class="pizzacontainer"  id="pizzamenu">
+        <div class="menu-header">
+            <h1>Vår Pizza Meny</h1>
+            <p>Autentiska italienska pizzor bakade i vedeldad ugn med de finaste råvarorna</p>
+        </div>
+        
+        <div class="bgtdivpizza">
+        <div class="pizza-grid">
+        <!-- Pizza 1 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-N33hUJ9-G0pbGI8wqeju4Gz_dxFRni6to1GcNkoPCk-3maP0U1y5zellgWAE');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Margarita</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost <span style="font-weight: 1000; color: black;">Nummer: 1</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 2 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-N33hUJ9-G0pbGI8wqeju4Gz_dxFRni6to1GcNkoPCk-3maP0U1y5zellgWAE');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Vesuvio</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka <span style="font-weight: 1000; color: black;">Nummer: 2</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 3 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ65NDpXoGKWvmoG1Sjy9E2x13cO4EOcwscnz5a_nPQ7tr3nCphcxCIGHTopgzU');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Capricciosa</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, champinjoner <span style="font-weight: 1000; color: black;">Nummer: 3</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 4 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT--TwzJOqCO0YvjD9B8Cw1qdO0jgP7Tv7LdB4logniocTunQB-uwzrMBS725zz');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Hawaii</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, ananas <span style="font-weight: 1000; color: black;">Nummer: 4</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 5 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_KNp8_bEaoWPSH7nS8hidqW5XYFO7q93Qg&s');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Marinara</h3>
+                <span class="pizza-price">125 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, räkor, musslor, tonfisk <span style="font-weight: 1000; color: black;">Nummer: 5</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 6 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Pizza-3007395.jpg');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Artista</h3>
+                <span class="pizza-price">125 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, räkor <span style="font-weight: 1000; color: black;">Nummer: 6</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 7 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL8VkOL32ehZy2mhj8pBCWwM_B067LkNSOGA&s');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Cacciatore</h3>
+                <span class="pizza-price">115 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, salami, lök <span style="font-weight: 1000; color: black;">Nummer: 7</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 8 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQnWYk05nhD89qd5NO6I9n8ivr9jFktDkIuw&s');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Prescatore</h3>
+                <span class="pizza-price">115 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, tonfisk, färsk vitlök <span style="font-weight: 1000; color: black;">Nummer: 8</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 9 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://www.grandiosa.se/wp-content/uploads/sites/54/2022/09/grandiosa-pan-pizzakomp_2.png');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Fantasia</h3>
+                <span class="pizza-price">115 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, köttfärs, färsk vitlök <span style="font-weight: 1000; color: black;">Nummer: 9</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 10 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQthYQHSDbpQQRD_PqT1UhRZVXUVrFL1MtdyA&s');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Venezia</h3>
+                <span class="pizza-price">115 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, bacon, ägg, lök <span style="font-weight: 1000; color: black;">Nummer: 10</span></p>
+            </div>
+          </div>
+        </div>
+
+
+    </div>
+  <!-- //! Pasta -->
+
+    <div class="pizzacontainer"  id="pastamenu">
+        <div class="menu-header">
+            <h1>Vår Pasta Meny</h1>
+            <p>Autentiska italienska pizzor bakade i vedeldad ugn med de finaste råvarorna</p>
+        </div>
+        
+        <div class="bgtdivpasta">
+        <div class="pizza-grid">
+        <!-- Pizza 1 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_plcLChQ_z2C3pCaunVX4MbC-LWIzPtBMfw&s');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Margarita</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost <span style="font-weight: 1000; color: black;">Nummer: 1</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 2 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://img.taste.com.au/sE-X5HqY/taste/2024/03/5-ingredient-turbo-charged-spaghetti-recipe-196959-1.jpg');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Vesuvio</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka <span style="font-weight: 1000; color: black;">Nummer: 2</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 3 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://www.allrecipes.com/thmb/gOoyZrgHb20A7YYnCrTh-zy9no4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/24079spaghetti-olioFranceC4x3-1e475cf8fd8c438c864d4206fc0503b6.jpg');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Capricciosa</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, champinjoner <span style="font-weight: 1000; color: black;">Nummer: 3</span></p>
+            </div>
+          </div>
+
+
+            <!-- Pizza 4 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://www.zeta.nu/app/uploads/2025/04/Spaghetti-med-tomatsas-och-stracciatella_9x16-768x432.webp');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Capricciosa</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, champinjoner <span style="font-weight: 1000; color: black;">Nummer: 3</span></p>
+            </div>
+          </div>
+
+            <!-- Pizza 5 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://festligare.se/wp-content/uploads/2024/02/pasta_kottbullar_rutig_duk-1024x649.jpg');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Capricciosa</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, champinjoner <span style="font-weight: 1000; color: black;">Nummer: 3</span></p>
+            </div>
+          </div>
+
+            <!-- Pizza 6 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://www.valio.fi/cdn-cgi/image/format=auto/https://cdn-wp.valio.fi/valio-wp-network/sites/9/2024/02/3217-spaghetti-kottfarssas-800x602.jpeg');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Capricciosa</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, champinjoner <span style="font-weight: 1000; color: black;">Nummer: 3</span></p>
+            </div>
+          </div>
+
+            <!-- Pizza 7 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://shared.cdn.smp.schibsted.com/v2/images/830b068f-426d-4f62-a594-722a14b81caa?fit=crop&h=750&w=1000&s=e1787a976fbf6fb956c77e57dadc16b18bd3e40d');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Capricciosa</h3>
+                <span class="pizza-price">109 kr</span>
+              </div>
+              <p class="pizza-ingredients">Tomatsås, ost, skinka, champinjoner <span style="font-weight: 1000; color: black;">Nummer: 3</span></p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+<!-- //! annat -->
+
+       <div class="pizzacontainer"  id="anantmenu">
+        <div class="menu-header">
+            <h1>Annat</h1>
+            <p>ÄKTA VAROR</p>
+        </div>
+        
+        <div class="bgtdivpasta">
+        <div class="pizza-grid">
+        <!-- Pizza 1 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://fransic-bacon.github.io/Fransic-site/images/slav.png'); ">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">3årigslav</h3>
+                <span class="pizza-price">5 kr</span>
+              </div>
+              <p class="pizza-ingredients">Arbetar bra <span style="font-weight: 1000; color: black;">Nummer: 1</span></p>
+            </div>
+          </div>
+
+          <!-- Pizza 2 -->
+          <div class="pizza-card">
+            <div class="pizza-img" style="background-image: url('https://fransic-bacon.github.io/Fransic-site/jul/3.png');">
+            </div>
+            <div class="pizza-info">
+              <div class="pizza-title">
+                <h3 class="pizza-name">Besök på slavfabriken</h3>
+                <span class="pizza-price">1 000 kr</span>
+              </div>
+              <p class="pizza-ingredients">Skojigt och ballt <span style="font-weight: 1000; color: black;">Nummer: 2</span></p>
+            </div>
+          </div>
+    </div>
+
+        </div>
+        </div>
+  <div class="pizzacontainer" id="kontaktmenu">
+  <div class="menu-header">
+    <h1>Kontakta Oss</h1>
+  </div>
+  
+  <div class="kontakt-container">
+    <div class="kontakt-info">
+      <div class="kontakt-sektion">
+        <h3>Öppettider</h3>
+        <p>Måndag - Fredag: 11:00 - 22:00</p>
+        <p>Lördag - Söndag: 12:00 - 23:00</p>
+      </div>
+      
+      <div class="kontakt-sektion">
+        <h3>Adress</h3>
+        <p>Bacon gatan 15</p>
+        <p>123 45 Pizzastad</p>
+      </div>
+      
+      <div class="kontakt-sektion">
+        <h3>Telefon</h3>
+        <p>070-123 456 78</p>
+      </div>
+      
+      <div class="kontakt-sektion">
+        <h3>E-post</h3>
+        <p>info@fransicbaconspizza.se</p>
+      </div>
+    </div>
+    
+    <div class="om-oss">
+      <h3>Om Fransic Bacons Pizza place</h3>
+      <p>Vi på Fransic Bacons Pizza Place har sedan 2005 serverat autentisk italiensk pizza bakad i vår vedeldade ugn. Våra recept härstammar från Napoli och vi använder endast de finaste råvarorna för att skapa perfekta pizzor till våra kunder.</p>
+      <p>Vår passion för god mat och trevlig service har gjort oss till en favorit i området. Välkommen att besöka oss eller beställa hem - vi lovar en smakupplevelse utöver det vanliga!</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Fransic Bacons Pizza place. Alla rättigheter förbehållna.</p>
+</footer>
+
+  </body>
+</html>
