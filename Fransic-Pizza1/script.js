@@ -22,3 +22,22 @@
         // Check initial position on page load
         checkScroll();
       });
+
+  changeBild();
+
+      function changeBild() {
+      let bild = document.getElementById("bigbild");
+
+      if(screen.width < 800){
+
+        bild.src = "bilder/small.png";
+
+      }
+
+      else{
+        bild.src = "bilder/rpizza.png";
+      }
+    }
+
+        setInterval(changeBild, 1000);
+     

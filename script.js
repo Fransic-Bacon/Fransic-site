@@ -1,4 +1,6 @@
 
+
+
 //! För att divsen med om Ica och ostkaka ska ändra sin font
 document.addEventListener('DOMContentLoaded', function() {
     // Elements we want to change opacity for
