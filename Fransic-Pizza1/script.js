@@ -30,7 +30,9 @@
 
       if(screen.width < 800){
 
+        if (bild.src.includes("bilder/rpizza.png")) {
         bild.src = "bilder/small.png";
+        }
 
       }
 
