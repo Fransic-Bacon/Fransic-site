@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Huvudsidor -->
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/index.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/test.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/google6f0ffaafb5917db0.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/robots.txt</loc></url>
+
+  <!-- Fransic Pizza -->
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Fransic-Pizza1/index.html</loc></url>
+
+  <!-- Portfolio -->
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/index.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/about.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/projekt.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/header&amp;fotter/header.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/header&amp;fotter/fotter.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/Projekt-link/JS/map-bollar/bollar/index.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/Projekt-link/JS/map-cub/index.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/Portfolio/Projekt-link/JS/map-snake/mask2/index.html</loc></url>
+
+  <!-- Shop -->
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/shop/Index.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/shop/fransicbacon.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/shop/fransicbilder.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/shop/loggain.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/shop/omoss.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/shop/produkter.html</loc></url>
+  <url><loc>https://fransic-bacon.github.io/Fransic-site/shop/t-shirt.html</loc></url>
+
+</urlset>
