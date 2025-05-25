@@ -1,4 +1,3 @@
+Sitemap: https://fransic-bacon.github.io/sitemap.xml
 User-agent: *
 Allow: /
-
-Sitemap: https://fransic-bacon.github.io/sitemap.xml
